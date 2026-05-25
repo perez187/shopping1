@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+     background: url("https://images.unsplash.com/photo-1489987707025-afc232f7ea0f") no-repeat center/cover;
+    min-height: 100vh;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.header-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.header-top img{
+    width: 200px;
+}
+
+.buscador{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buscador input{
+    padding: 10px 15px;
+    width: 280px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.titulo{
+    text-align: center;
+    padding: 10px 0 25px;
+}
+
+.titulo h1{
+    font-size: 3rem;
+}
+
+
+.menu {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+
+.bienvenida {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 450px;
+}
+
+.bienvenida h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.bienvenida h3 {
+    margin-top: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+
+.footer {
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+
+.footer-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.info {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    max-width: 280px;
+}
+
+.info h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.tabla-contacto {
+    width: 30%;
+    border-collapse: collapse;
+}
+
+
+.tabla-contacto td {
+    padding: 8px;
+}
+
+
+.tabla-contacto tr {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.tabla-contacto a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.tabla-contacto a:hover {
+    text-decoration: underline;
+}
+
+.buscador input{
+    padding: 10px 15px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+.icono-carrito{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+#contador-carrito{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.producto{
+    background: rgba(255,255,255,0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+.producto button{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagina-carrito{
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.9);
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.producto-carrito{
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.producto-carrito button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TIENDA</title>
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f2f2f2;
+}
+
+.header{
+    text-align:center;
+    padding:20px;
+    background:black;
+    color:white;
+}
+
+.contenedor{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.precio{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+<h1>ELECTRONICA</h1>
+<a href="index.html" style="color:white;">⬅ Volver</a>
+</div>
+
+<div class="contenedor">
+
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71dX4FbuGDL._AC_UF894,1000_QL80_.jpg">
+        <div class="card-content">
+            <h3>Producto 1</h3>
+            <p>Producto de calidad.</p>
+            <p class="precio">$100</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i5.walmartimages.com/asr/fe97b26e-964f-4caa-bf14-dfd924b25e4a.246ed9547ab1fd42538817df1d9713b4.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+        <div class="card-content">
+            <h3>Producto 2</h3>
+            <p>Producto recomendado.</p>
+            <p class="precio">$200</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
