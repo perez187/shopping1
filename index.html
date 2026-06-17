@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shopping - Moda accesible y moderna">
     <title>Shopping</title>
-
-   <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
-
 <body>
-
 <header class="header">
-
     <div class="header-top contenedor">
-
         <img src="imagenes/logo.PNG" alt="logo shopping" width="200">
-
         <div class="buscador">
             <input type="text" placeholder="Buscar...">
         </div>
-
     </div>
-
     <div class="titulo">
         <h1>Shopping🛒</h1>
     </div>
-
     <nav class="menu">
         <div class="contenedor nav-flex">
             <a href="paginas/novedades.html">Novedades</a>
@@ -47,64 +39,23 @@
             <a href="paginas/electronica.html">Electrónica</a>
         </div>
     </nav>
-
 </header>
-
 <main class="contenido">
-
     <section class="bienvenida contenedor">
-
-    <h2>Bienvenido a Shopping</h2>
-
-    <p>Nuevas colecciones cada semana</p>
-    <p>Moda al estilo moderno y actual</p>
-    <p>Precios accesibles para todos</p>
-
-    <h3>Compra fácil, rápido y seguro</h3>
-
-</section>
-
-
-<section class="productos contenedor">
-
-    <div class="producto">
-        <h3>Vestido Moderno</h3>
-        <p>$500</p>
-
-        <button onclick="agregarAlCarrito('Vestido Moderno', 500)">
-            Agregar al carrito
-        </button>
-    </div>
-
-    <div class="producto">
-        <h3>Zapatos Casual</h3>
-        <p>$800</p>
-
-        <button onclick="agregarAlCarrito('Zapatos Casual', 800)">
-            Agregar al carrito
-        </button>
-    </div>
-
-    <div class="producto">
-        <h3>Bolsa Elegante</h3>
-        <p>$650</p>
-
-        <button onclick="agregarAlCarrito('Bolsa Elegante', 650)">
-            Agregar al carrito
-        </button>
-    </div>
-
-</section>
-    
-
+        <h2>Bienvenido a Shopping</h2>
+        <p>Nuevas colecciones cada semana</p>
+        <p>Moda al estilo moderno y actual</p>
+        <p>Precios accesibles para todos</p>
+        <h3>Compra fácil, rápido y seguro</h3>
+    </section>
+    <section class="productos contenedor" id="lista-productos">
+        <p style="color:white">Cargando productos...</p>
+    </section>
 </main>
-
 <footer class="footer">
     <div class="contenedor footer-box">
-
         <div class="info">
-            <h3> Contacto</h3>
-
+            <h3>Contacto</h3>
             <table class="tabla-contacto">
                 <tr>
                     <td><strong>Domicilio:</strong></td>
@@ -124,7 +75,6 @@
                 </tr>
             </table>
         </div>
-
     </div>
 </footer>
 <a href="html/carrito.html" class="icono-carrito">
