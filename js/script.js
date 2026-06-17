@@ -58,8 +58,12 @@ async function cargarProductos() {
         .from('inventario_completo')
         .select('*');
     if (error) {
-        console.error(error);
-        contenedor.innerHTML = '<p style="color:white">Error al cargar productos.</p>';
+        console.error('Error Supabase:', error);
+        contenedor.innerHTML = '<p style="color:white">Error al cargar productos: ' + error.message + '</p>';
+        return;
+    }
+    if (!data || data.length === 0) {
+        contenedor.innerHTML = '<p style="color:white">No hay productos disponibles.</p>';
         return;
     }
     contenedor.innerHTML = "";
