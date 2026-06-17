@@ -1,5 +1,5 @@
 const supabaseUrl = 'https://cwoqubckccnjcxwlrxts.supabase.co';
-const supabaseKey = 'sb_publishable_odbwYID1v3ssXbim0x_mZg_LmuJ5qGt';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN3b3F1YmNrY2NuamN4d2xyeHRzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3MjIyMjIsImV4cCI6MjA5NzI5ODIyMn0.YkNhSocbCKDHsXjdX6NW0agRWT44Fs3lfLGJoGu5PZs';
 const db = supabase.createClient(supabaseUrl, supabaseKey);
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
