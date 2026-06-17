@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <title>Carrito</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
-
 <body>
-
 <div class="pagina-carrito">
-
     <h1>🛒 Mi Carrito</h1>
-
     <div id="lista-carrito"></div>
-
     <h2>Total: $<span id="total">0</span></h2>
-
-    <a href="../index.html" class="btn">
+    <button onclick="finalizarCompra()" class="btn" style="background:#16a34a; border:none; cursor:pointer; font-size:1rem; margin-top:15px;">
+        ✅ Finalizar compra
+    </button>
+    <a href="../index.html" class="btn" style="margin-top:10px; display:inline-block;">
         Seguir comprando
     </a>
-
 </div>
-
 <script src="../js/script.js"></script>
-
 </body>
 </html>
